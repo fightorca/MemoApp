@@ -2,8 +2,8 @@ import React from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity, Alert,
 } from 'react-native';
-import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import Icon from './Icon';
 
 export default function MemoList() {
   const navigation = useNavigation();
@@ -21,7 +21,7 @@ export default function MemoList() {
           style={styles.memoDelete}
           onPress={() => { Alert.alert('Are you sure?'); }}
         >
-          <Feather name="x" size={24} color="#B0B0B0" />
+          <Icon name="delete" size={24} color="#B0B0B0" />
         </TouchableOpacity>
       </TouchableOpacity>
 
@@ -37,7 +37,7 @@ export default function MemoList() {
           style={styles.memoDelete}
           onPress={() => { Alert.alert('Are you sure?'); }}
         >
-          <Feather name="x" size={24} color="#B0B0B0" />
+          <Icon name="delete" size={24} color="#B0B0B0" />
         </TouchableOpacity>
       </TouchableOpacity>
 
@@ -53,7 +53,7 @@ export default function MemoList() {
           style={styles.memoDelete}
           onPress={() => { Alert.alert('Are you sure?'); }}
         >
-          <Feather name="x" size={24} color="#B0B0B0" />
+          <Icon name="delete" size={24} color="#B0B0B0" />
         </TouchableOpacity>
       </TouchableOpacity>
     </View>
